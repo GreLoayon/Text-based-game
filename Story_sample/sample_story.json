@@ -1,0 +1,165 @@
+{
+	"000_prologue_event": {
+		"title": "A Strange Start",
+		"narr_text": "You wake in your camp with no memories to speak of. There is a military base camp nearby, maybe they can be of assitance?",
+		"choices": {
+			"1": {
+				"text": "Enter the military camp.",
+				"output": "001_military_base"
+			},
+			"2":{
+				"text": "Stay in the camp.",
+				"output": "001_stay_camp"
+			},
+		}
+	},
+	"001_base_entered": {
+		"title": "Entering the Base",
+		"narr_text": "Curious for some answers you tell the soldiers to take you to their general. The General briefs you on the mission at hand.",
+		"choices": {
+			"1": {
+				"text": "Listen?.",
+				"output": "002_listen"
+			},
+			"2":{
+				"text": "Don't listen.",
+				"output": "002_imprisoned"
+			},
+		}
+	},
+	"001_stay": {
+		"title": "Nah, not worth it.",
+		"narr_text": "You decide that this military base is not worth the trouble, so you decide to stay out of it and spend the rest of your days out of harm's way.",
+		"choices": {
+			"1": {
+				"text": "Proceed.",
+				"output": "010_game_over"
+			},
+		}
+	},
+	"002_listen": {
+		"title": "A mission",
+		"narr_text": "You listen to the General and instructs you locate a secret lab they suspect is hidden past the mountains.
+		However, another soldier is tagging along with you to assist.",
+		"choices": {
+			"1": {
+				"text": "Proceed.",
+				"output": "003_proceed"
+			},
+		}
+	},
+	"002_imprisoned": {
+		"title": "Jailed",
+		"narr_text": "You refuse to listen to what they have to say. The soldiers imprison you.",
+		"choices": {
+			"1": {
+				"text": "Proceed.",
+				"output": "010_game_over"
+			},
+		}
+	},
+	"003_proceed": {
+		"title": "A new companion",
+		"narr_text": "With your new all in tow, you proceed outside and walk for several hours.
+		Until you reach another military base",
+		"choices": {
+			"1": {
+				"text": "Take the high road.",
+				"output": "004_high_road"
+			},
+			"2": {
+				"text": "Use the old sewer system beneath.",
+				"output": "004_low_road"
+			},
+			"3":{
+				"text": "Throw grenade",
+				"output": "010_game_over"
+			},
+		}
+	},
+	"004_high_road": {
+		"title": "The high road",
+		"narr_text": "Deciding that the high road is the best option you take a well hidden path leading into the mountain.",
+		"choices": {
+			"1": {
+				"text": "Proceed.",
+				"output": "005_cave_choice"
+			},
+		}
+	},
+	"004_low_road": {
+		"title": "The low road",
+		"narr_text": "Taking the low road, you sneak underneath the enemy base and sneak right under their noses.",
+		"choices": {
+			"1": {
+				"text": "Proceed.",
+				"output": "006_sewer_choice"
+			},
+		}
+	},
+	"005_cave_choice": {
+		"title": "Up or Below?",
+		"narr_text": "You and McConnell reach a dead end. But you can see some holds along the wall that seem sturdy.
+		There is also a small hole near the bottom of the wall that is about your size.",
+		"choices": {
+			"1": {
+				"text": "Climb over?",
+				"output": "001_military_base"
+			},
+			"2":{
+				"text": "Crawl though?",
+				"output": "010_game_over"
+			},
+		}
+	},
+	"006_sewer_choice": {
+		"title": "Exhausting",
+		"narr_text": "You have walking though the sewers for some time now and both of you are tired.
+		There are enemies nearby, but will you keep going or camp and rest for the night?",
+		"choices": {
+			"1": {
+				"text": "Camp and rest for the night.",
+				"output": "010_game_over"
+			},
+			"2":{
+				"text": "No time to rest, keep going.",
+				"output": "007_reach_lab"
+			},
+		}
+	},
+	"007_reach_lab": {
+		"title": "The goal in sight",
+		"narr_text": "You have finally reached the entrance to the lab, but no one is around save for a few dead guards.
+		There is a control panel that will open the door loudly which may alert someone else, or swipe one of the guard's keycard and use a service entrance instead?",
+		"choices": {
+			"1": {
+				"text": "Control Panel.",
+				"output": "010_game_over"
+			},
+			"2":{
+				"text": "Swipe dead guard's keycard.",
+				"output": "011_game_finish"
+			},
+		}
+	},
+	"010_game_over": {
+		"title": "End of the road",
+		"narr_text": "Your adventure is over. You were never able to complete your mission.",
+		"choices": {
+			"1": {
+				"text": "Your adventure is over. Retry?",
+				"output": "000_prologue_event"
+			},
+		}
+	},
+	"011_game_finish": {
+		"title": "To be continued...",
+		"narr_text": "You enter the lab, the first thing you and McConnell see, a massaacre. Every scientist dead. Who could have done this? To be continued...",
+		"choices": {
+			"1": {
+				"text": "Your adventure is complete for now To be continued...",
+				"output": "011_prologue_event"
+			},
+		}
+	},
+}

@@ -1,0 +1,19 @@
+Tried to make a "choose-your-own-adventure" game with mutiple choices that lead
+to different outcomes.
+Through research, found a way to do it by outlining the story in a json file,
+but may have overcomplicated it.
+The idea is to click on a choice and it will 'output' the next scenario that is
+marked with labels.
+Not able to script it into the game, nor did I have the time to.
+Only managed to create the general layout and UI, to see how the game looks.
+In the Story_sample folder you will find a json file that gives a general idea
+of how the choices are structured. Not sure if this is the correct/effective method.
+The story is very incomplete and is very linear for the time being.
+
+Missing features:
+	1. a script that will take the json file line and combine it with the 
+	choice boxes on the screen scene
+	2. a stats display on the top of the screen that will update based on choices,
+	though no scenario calls for it currently.
+	3. story evolving differently based on other choices, currently story is
+	very linear.

@@ -1,0 +1,146 @@
+[gd_scene format=3 uid="uid://di8scubnao38y"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v3prh"]
+
+[node name="GameScreen" type="PanelContainer" unique_id=115790740]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1261860118]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1664797494]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=259715879]
+custom_minimum_size = Vector2(0, 68)
+layout_mode = 2
+
+[node name="Stats" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=2091268582]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 23
+text = "Player stats"
+
+[node name="Menu button" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=1099813421]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Menu"
+
+[node name="HSeparator" type="HSeparator" parent="MarginContainer/VBoxContainer" unique_id=900075063]
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/VBoxContainer" unique_id=1533253807]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ContentContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/ScrollContainer" unique_id=2035842698]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/ScrollContainer/ContentContainer" unique_id=1976801309]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "The Story of Henry"
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/ScrollContainer/ContentContainer" unique_id=1522835332]
+custom_minimum_size = Vector2(460, 0)
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="MarginContainer/VBoxContainer/ScrollContainer/ContentContainer" unique_id=1527230406]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/normal_font_size = 20
+theme_override_font_sizes/bold_font_size = 20
+theme_override_font_sizes/bold_italics_font_size = 20
+theme_override_font_sizes/italics_font_size = 20
+theme_override_font_sizes/mono_font_size = 20
+bbcode_enabled = true
+text = "You are Henry. Your goal is to reach the research lab in order to stop the enemy forces from experimenting on test subjects. "
+fit_content = true
+scroll_active = false
+
+[node name="ChoiceButtons" type="MarginContainer" parent="MarginContainer/VBoxContainer/ScrollContainer/ContentContainer" unique_id=1294611841]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/ScrollContainer/ContentContainer/ChoiceButtons" unique_id=314682311]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="ChoiceContainer" type="PanelContainer" parent="MarginContainer/VBoxContainer/ScrollContainer/ContentContainer/ChoiceButtons/VBoxContainer" unique_id=1352993428]
+custom_minimum_size = Vector2(0, 45)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_v3prh")
+
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer/ScrollContainer/ContentContainer/ChoiceButtons/VBoxContainer/ChoiceContainer" unique_id=1085219948]
+layout_mode = 2
+focus_mode = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/ScrollContainer/ContentContainer/ChoiceButtons/VBoxContainer/ChoiceContainer" unique_id=670020079]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 9
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 9
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/ScrollContainer/ContentContainer/ChoiceButtons/VBoxContainer/ChoiceContainer/MarginContainer" unique_id=389424346]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Choice 1"
+
+[node name="ChoiceContainer2" type="PanelContainer" parent="MarginContainer/VBoxContainer/ScrollContainer/ContentContainer/ChoiceButtons/VBoxContainer" unique_id=301552671]
+custom_minimum_size = Vector2(0, 45)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_v3prh")
+
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer/ScrollContainer/ContentContainer/ChoiceButtons/VBoxContainer/ChoiceContainer2" unique_id=266076719]
+layout_mode = 2
+focus_mode = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/ScrollContainer/ContentContainer/ChoiceButtons/VBoxContainer/ChoiceContainer2" unique_id=996669771]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 9
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 9
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/ScrollContainer/ContentContainer/ChoiceButtons/VBoxContainer/ChoiceContainer2/MarginContainer" unique_id=315157970]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Choice 2"
+
+[node name="ChoiceContainer3" type="PanelContainer" parent="MarginContainer/VBoxContainer/ScrollContainer/ContentContainer/ChoiceButtons/VBoxContainer" unique_id=1032042899]
+custom_minimum_size = Vector2(0, 45)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_v3prh")
+
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer/ScrollContainer/ContentContainer/ChoiceButtons/VBoxContainer/ChoiceContainer3" unique_id=1050910629]
+layout_mode = 2
+focus_mode = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/ScrollContainer/ContentContainer/ChoiceButtons/VBoxContainer/ChoiceContainer3" unique_id=947847756]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 9
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 9
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/ScrollContainer/ContentContainer/ChoiceButtons/VBoxContainer/ChoiceContainer3/MarginContainer" unique_id=749957781]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Choice 3"
